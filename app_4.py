@@ -36,7 +36,7 @@ eye_closed_duration_threshold = 2
 
 # Initialize Streamlit app
 st.title("Eye Blink Detection with Streamlit")
-st.session_state['answer'] = ''!
+st.session_state['answer'] = ''
 
 st.write(st.session_state)
 
