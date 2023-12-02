@@ -36,7 +36,19 @@ eye_closed_duration_threshold = 2
 
 # Initialize Streamlit app
 st.title("Eye Blink Detection with Streamlit")
+st.session_state['answer'] = ''!
 
+st.write(st.session_state)
+
+realans = ['', 'abc', 'edf']
+
+if  st.session_state['answer'] in realans:
+    answerStat = "correct"
+elif st.session_state['answer'] not in realans:
+    answerStat = "incorrect"
+
+st.write(st.session_state)
+st.write(answerStat)
 # Function to display video stream and eye blink detection results
 def display_video():
     while True:
